@@ -3,11 +3,11 @@ public class SumEvenNumbers {
  
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter start number: ");
-        int startNo = scanner.nextInt();
-        System.out.print("Enter end number: ");
-        int endNo = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter startNo and endNo separated by a space: ");
+        String[] input = sc.nextLine().split(" ");
+        int startNo = Integer.parseInt(input[0]);
+        int endNo = Integer.parseInt(input[1]);
 
         // Check if startNo is less than 0
         if (startNo < 0) {
